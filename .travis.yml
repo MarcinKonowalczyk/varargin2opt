@@ -6,5 +6,8 @@ addons:
     packages:
     - octave
 
+before_script:
+- octave-cli --eval "addpath('tests');savepath" #Adding and saving the subdirectory to Octave path
+
 script:
-- octave-cli tests/test_varargin2opt.m
+- octave-cli tests/test_varargin2opt.m # Running a MATLAB/Octave script in root
