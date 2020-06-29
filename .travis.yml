@@ -7,9 +7,8 @@ addons:
     - octave
 
 before_script:
-- octave-cli --eval "addpath('mydirectory');savepath"      #Adding and saving the subdirectory to Octave path
+- octave-cli --eval "addpath('tests');savepath" #Adding and saving the subdirectory to Octave path
 
 script:
-- octave-cli simpleTest.m                                  # Running a MATLAB/Octave script in root
-- octave-cli --eval "rand(4)"                              # Evaluate a built-in function from Octave CLI
-- octave-cli --eval "myfunction(1)"      
+- octave-cli test_varargin2opt.m # Running a MATLAB/Octave script in root
+- octave-cli --eval "rand(4)" # Evaluate a built-in function from Octave CLI

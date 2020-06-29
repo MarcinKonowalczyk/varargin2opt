@@ -43,7 +43,7 @@ Additionally, validation functions can be added to `s`. Empty string (`''`) pars
 ```matlab
 > s = {'name','Boris','';...
        'age',-1,@(x) x>0 && x<100};
-> varargin2opt(c,s) # No error
+> varargin2opt(c,s) % No error
 ```
 
 ```matlab
