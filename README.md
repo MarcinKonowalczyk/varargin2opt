@@ -24,7 +24,7 @@ This function parses a content of a cell with `{key,value,...}` pairs (usually `
 <pre><code>
 &gt; s = {'name','Boris'};
 &gt; varargin2opt(c,s)
-<span style="color:#ff6400">Warning: Some options (age) were not matched to any pattern</span>
+<font style="color:#ff6400">Warning: Some options (age) were not matched to any pattern</font>
 ans = 
   struct with fields:
     name: 'Lyra'
