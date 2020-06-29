@@ -155,4 +155,4 @@ Empty string (`''`) parses as: _'check that the class of the supplied argument i
 ## ToDo's
 
 - [ ] Make chaining check the input against the specs and add other specification defaults.
-- [ ] Remove dependency on the `inputParser`
+- [x] Remove dependency on the `inputParser`
