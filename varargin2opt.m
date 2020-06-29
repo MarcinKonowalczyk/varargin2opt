@@ -82,11 +82,12 @@ else
     
     % Create input parser
     p = inputParser;
-    p.CaseSensitive = false;
-    p.FunctionName = mfilename;
-    p.KeepUnmatched = true;
-    p.PartialMatching = false;
-    p.StructExpand = false;
+    % Use try because not every version of inputParser has all of these fields
+    try p.CaseSensitive = false; end
+    try p.FunctionName = mfilename; end
+    try p.KeepUnmatched = true; end
+    try p.PartialMatching = false; end
+    try p.StructExpand = false; end
     
     % Parse options
     for Ni = 1:N
