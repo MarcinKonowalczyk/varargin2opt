@@ -1,6 +1,7 @@
 function options = varargin2opt(varargin)
 %% options = varargin2opt(...)
-% This function parses the 'varargin' input of a function in key-value pairs.
+% This function parses a key-value 'varargin' input of a function into
+% a struct.
 %
 % SYNTAX
 %
@@ -18,9 +19,11 @@ function options = varargin2opt(varargin)
 %
 % Written by Marcin Konowalczyk
 % Timmel Group @ Oxford University
+
 %%
 narginchk(1,2)
 II = 'varargin2opt:invalidinput'; % Invalid input message ID
+
 %% Just the 'varargin'
 if nargin == 1
     % Check varargin
