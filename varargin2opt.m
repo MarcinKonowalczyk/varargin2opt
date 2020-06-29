@@ -19,15 +19,22 @@ function options = varargin2opt(varargin)
 %
 % Written by Marcin Konowalczyk
 % Timmel Group @ Oxford University
-
 %%
 narginchk(1,2)
 II = 'varargin2opt:invalidinput'; % Invalid input message ID
-
+W = warning('off','backtrace');
 %% Just the 'varargin'
 if nargin == 1
-    % Check varargin
     varargin = varargin{1};
+    
+    % Check special (fast) case
+    if isstruct(varargin)
+        % Assume that varargin{1} is the options structure and immediatelly return
+        options = varargin;
+        return
+    end
+    
+    % Check varargin
     assert(isa(varargin,'cell'),II,'Invalid ''varargin''. Must be a cell');
     N = numel(varargin);
     assert(~mod(N,2),II,'Invalid ''varargin''. Must have even length');
@@ -45,6 +52,15 @@ if nargin == 1
     
 %% 'varargin' and input specifications
 else
+    varargin_temp = varargin{1};
+    
+    % Check special (fast) case
+    if isstruct(varargin_temp)
+        % Assume that varargin{1} is the options structure and immediatelly return
+        options = varargin_temp;
+        return
+    end
+    
     % Add the third default entry to specs
     specs = varargin{2};
     assert(isa(specs,'cell'),II,'Invalid specifications. Must be a cell');
@@ -57,7 +73,7 @@ else
     end
     
     % Check varargin
-    varargin = varargin{1};
+    varargin = varargin_temp;
     assert(isa(varargin,'cell'),II,'Invalid ''varargin''. Must be a cell');
     assert(~mod(numel(varargin),2),II,'Invalid ''varargin''. Must have even length');
     
@@ -66,6 +82,8 @@ else
     p.CaseSensitive = false;
     p.FunctionName = mfilename;
     p.KeepUnmatched = true;
+    p.PartialMatching = false;
+    p.StructExpand = false;
     
     % Parse options
     for Ni = 1:N
@@ -98,4 +116,5 @@ else
     end
 end
 options = orderfields(options);
+warning(W);
 end
