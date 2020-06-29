@@ -42,7 +42,7 @@ Additionally, validation functions can be added to `s`. Empty string (`''`) pars
 
 ```matlab
 > s = {'name','Boris','';...
-       'age',-1,@(x) x>0 & s<100};
+       'age',-1,@(x) x>0 && x<100};
 > varargin2opt(c,s) # No error
 ```
 
@@ -79,8 +79,8 @@ ans =
 The specification of `'any'` means that any input for that particular key is accepted.
 
 ```matlab
-s = {'name', 'Boris', 'any'             ;
-     'age' , -1     , @(x) x>0 && x<100};
+s = {'name','Boris','any';
+     'age',-1,@(x) x>0 && x<100};
 c = {'name',@std,'age',14};
 varargin2opt({},s)
 ans = 
