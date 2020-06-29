@@ -156,3 +156,4 @@ Empty string (`''`) parses as: _'check that the class of the supplied argument i
 
 - [ ] Make chaining check the input against the specs and add other specification defaults.
 - [x] Remove dependency on the `inputParser`
+- [ ] Clean up the testing framework and make sure tests are covering all the possibilities

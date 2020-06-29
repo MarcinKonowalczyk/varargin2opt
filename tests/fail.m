@@ -1,5 +1,5 @@
 function fail()
-global info;
-info.failed = true;
+global failed;
+failed = true;
 fprintf('!!! FAIL !!!\n');
 end

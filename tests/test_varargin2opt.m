@@ -1,13 +1,11 @@
 clear; clc;
 
-global info;
-info = struct;
-info.failed = false;
+global failed;
+failed = false;
 
 II = 'varargin2opt:invalidinput';
 
-
-%%
+%% Just a cell without specifications
 fprintf('Just a cell without specifications\n');
 c = {'name','Lyra','age',14};
 t.name = 'Lyra'; t.age = 14;    
@@ -20,7 +18,7 @@ catch me
     fail();
 end
 
-%%
+%% Empty cell without specifications
 fprintf('Empty cell without specifications\n');
 c = {}; t = struct();
 try
@@ -32,7 +30,7 @@ catch me
     fail()
 end
 
-%%
+%% Keys must be character arrays
 fprintf('Keys must be character arrays\n');
 c = {'name','Lyra',[1,2,3],14};
 try
@@ -43,7 +41,7 @@ catch me
     handle_expected_exception(me,II)
 end
 
-%%
+%% Keys must be of even length
 fprintf('Keys must be of even length\n');
 c = {'name','Lyra','name'};
 try
@@ -54,7 +52,7 @@ catch me
     handle_expected_exception(me,II)
 end
 
-%%
+%% Cell with specifications, but no validator
 fprintf('Cell with specifications, but no validator\n');
 c = {'name','Lyra','age',14};
 s = {'name','Boris'};
@@ -72,7 +70,7 @@ catch me
 end
 warning('on','varargin2opt:unmatchedOptions'); % Restore warning status
 
-%%
+%% By default, specified name must be of the same type
 fprintf('By default, specified name must be of the same type\n');
 c = {'name','Lyra'};
 s = {'name',999};
@@ -84,7 +82,7 @@ catch me
     handle_expected_exception(me,II);
 end
 
-%%
+%% Cell with specifications and validators
 fprintf('Cell with specifications and validators\n');
 c = {'name','Lyra','age',14};
 s = {'name','Boris','';
@@ -99,7 +97,7 @@ catch me
     fail();
 end
 
-%%
+%% Pass in invalid input
 fprintf('Pass in invalid input\n');
 c = {'name','Lyra','age',98};
 s = {'name','Boris','';
@@ -176,6 +174,6 @@ catch me
 end  
 
 %% Throw an error is any of the tests failed
-if info.failed
+if failed
     error('Some tests failed')
 end
