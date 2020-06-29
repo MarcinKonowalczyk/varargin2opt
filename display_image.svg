@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 5906 5906" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1090.09,-3438.96)">
+        <text x="1208.2px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; c = {</text>
+        <text x="2472.51px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;name&apos;</text>
+        <text x="3556.2px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,</text>
+        <text x="3736.82px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;Lyra&apos;</text>
+        <text x="4820.51px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,</text>
+        <text x="5001.12px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;age&apos;</text>
+        <text x="5904.2px" y="3785.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,14};</text>
+        <text x="1208.2px" y="4100.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; varargin2opt(c)</text>
+        <text x="4459.28px" y="4100.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(26,140,24);">% OK</text>
+        <text x="1208.2px" y="4415.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">ans =</text>
+        <text x="2291.89px" y="4415.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(0,0,255);">struct</text>
+        <text x="3556.2px" y="4415.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">with ﬁelds:</text>
+        <rect x="2291.89" y="4434.92" width="1083.69" height="13.184" style="fill:rgb(0,0,255);"/>
+        <text x="1930.66px" y="4730.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">name: &apos;Lyra&apos;</text>
+        <text x="2111.28px" y="5045.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">age: 14</text>
+        <text x="1208.2px" y="5360.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; s = {</text>
+        <text x="2472.51px" y="5360.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;name&apos;</text>
+        <text x="3556.2px" y="5360.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,</text>
+        <text x="3736.82px" y="5360.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;Boris&apos;</text>
+        <text x="5001.12px" y="5360.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">};</text>
+        <text x="1208.2px" y="5675.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; varargin2opt(c,s)</text>
+        <text x="1208.2px" y="5990.88px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:300px;fill:rgb(255,100,0);">Warning:</text>
+        <text x="2833.74px" y="5990.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(255,100,0);">Some options (age)</text>
+        <text x="1208.2px" y="6305.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(255,100,0);">were not matched to any pattern</text>
+        <text x="1208.2px" y="6620.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">ans =</text>
+        <text x="2291.89px" y="6620.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(0,0,255);">struct</text>
+        <text x="3556.2px" y="6620.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">with ﬁelds:</text>
+        <rect x="2291.89" y="6639.92" width="1083.69" height="13.184" style="fill:rgb(0,0,255);"/>
+        <text x="1930.66px" y="6935.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">name: &apos;Lyra&apos;</text>
+        <text x="1208.2px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; c = {</text>
+        <text x="2472.51px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;name&apos;</text>
+        <text x="3556.2px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,</text>
+        <text x="3736.82px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;Lyra&apos;</text>
+        <text x="4820.51px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,</text>
+        <text x="5001.12px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;age&apos;</text>
+        <text x="5904.2px" y="7250.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,97};</text>
+        <text x="1208.2px" y="7565.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; s = {</text>
+        <text x="2472.51px" y="7565.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;name&apos;</text>
+        <text x="3556.2px" y="7565.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,&apos;Boris&apos;,</text>
+        <text x="5181.74px" y="7565.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;&apos;</text>
+        <text x="5542.97px" y="7565.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">;</text>
+        <text x="5723.58px" y="7565.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(26,140,24);">...</text>
+        <text x="2472.51px" y="7880.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(161,0,244);">&apos;age&apos;</text>
+        <text x="3375.59px" y="7880.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">,-1,@(x)x&gt;0&amp;&amp;x&lt;50};</text>
+        <text x="1208.2px" y="8195.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;">&gt; varargin2opt(c,s)</text>
+        <text x="4820.51px" y="8195.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(26,140,24);"># Too old</text>
+        <text x="1208.2px" y="8510.88px" style="font-family:'Menlo-Bold', 'Menlo', monospace;font-weight:700;font-size:300px;fill:rgb(233,0,0);">Error:</text>
+        <text x="2472.51px" y="8510.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(233,0,0);">The value of &apos;age&apos; is</text>
+        <text x="1208.2px" y="8825.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(233,0,0);">invalid. It must satisfy the</text>
+        <text x="1208.2px" y="9140.88px" style="font-family:'Menlo-Regular', 'Menlo', monospace;font-size:300px;fill:rgb(233,0,0);">function: @(x)x&gt;0&amp;x&lt;50.</text>
+    </g>
+</svg>
