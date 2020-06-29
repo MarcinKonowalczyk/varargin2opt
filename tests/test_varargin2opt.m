@@ -1,15 +1,11 @@
 clear; clc;
 
-%% Define a tiny testing framework
-failed = false; % Whether any tests failed
-pass = @() fprintf('=== PASS ===\n');
-fail = @() evalin('caller','failed = true; fprintf(''!!! FAIL !!!\n'');');
+global info;
+info = struct;
+info.failed = false;
+
 II = 'varargin2opt:invalidinput';
-exit_message = @(me) eval('fprintf(''Exception: ''''%s''''\n'',me.message);');
-handle_expected_exception = @(me,id) eval(... % @( Exception, expected exception ID )
-    ['if ~isequal(me.identifier,id), fprintf(''Uncaught exception\n''); ',...
-    'evalin(''caller'',''fail()''), else, ',...
-    'evalin(''caller'',''pass()''), end']);
+
 
 %%
 fprintf('Just a cell without specifications\n');
@@ -178,9 +174,8 @@ catch me
     exit_message(me)
     fail()
 end  
-    
 
 %% Throw an error is any of the tests failed
-if failed
+if info.failed
     error('Some tests failed')
 end
