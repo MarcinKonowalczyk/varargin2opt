@@ -1,11 +1,3 @@
-function test_varargin2opt()
-
-% Go to parent folder
-% [path,~,~] = fileparts(fileparts(mfilename('fullpath')));
-% old = cd(path);
-% cleaner = onCleanup(@()cd(old)); % Return to this folder on cleanup
-
-
 fprintf('Test basic functionality\n');
 
 c = {'name','Lyra','age',14};
@@ -26,5 +18,3 @@ s = {'name','Boris','';...
        'age',-1,@(x) x>0 && x<100};
 opt = varargin2opt(c,s); % No error
 disp(opt);
-
-end
