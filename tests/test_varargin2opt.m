@@ -1,5 +1,4 @@
 fprintf('Test basic functionality\n');
-
 c = {'name','Lyra','age',14};
 opt = varargin2opt(c);
 disp(opt);
