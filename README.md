@@ -120,7 +120,7 @@ ans =
 
 ### In a function
 
-A typical usage of `varargin2opt` is inside of a function, as `varargin` parser:
+A typical usage of `varargin2opt` is inside of a function, as [`varargin`](https://www.mathworks.com/help/matlab/ref/varargin.html) parser:
 
 ```matlab
 function [...] = myLittleFunction(...,varargin)
