@@ -1,5 +1,4 @@
-[![View varargin2opt on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/69972-varargin2opt) [![Build Status](https://travis-ci.com/MarcinKonowalczyk/varargin2opt.svg?branch=master)](https://travis-ci.com/MarcinKonowalczyk/varargin2opt)
-
+[![View varargin2opt on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/69972-varargin2opt) [![Build Status](https://app.travis-ci.com/MarcinKonowalczyk/varargin2opt.svg?branch=master)](https://app.travis-ci.com/MarcinKonowalczyk/varargin2opt)
 <!-- language-all: lang-matlab -->
 
 # varargin2opt <!-- omit in toc -->
